@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the ANISO Processing Framework and the original scientific method publications as appropriate."
+type: software
+title: "ANISO Processing Framework (APF)"
+authors:
+  - family-names: "Stocker"
+    given-names: "Thomas R."
+repository-code: "https://github.com/thomasstocker42/ANISO-Processing-Framework"
+version: "0.1.0"
+abstract: "Research scripts accompanying an MSc thesis on magnetic susceptibility source separation in postmortem in-situ brain MRI."

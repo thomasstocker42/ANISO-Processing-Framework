@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+
+ROOT="$(cd "$(dirname "$0")" && pwd)"
+
+export PYTHONPATH="$ROOT/scripts/infrastructure"
+
+if command -v python >/dev/null 2>&1; then
+    exec python "$@"
+elif command -v python3 >/dev/null 2>&1; then
+    exec python3 "$@"
+else
+    echo "Error: Neither python nor python3 found in PATH."
+    exit 1
+fi
+
+#PYTHONPATH=scripts/infrastructure python scripts/diffusion/04_eddy.py becomes
+#(./apf -m py_compile scripts/diffusion/04_eddy.py)
+#./apf scripts/diffusion/04_eddy.py

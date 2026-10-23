@@ -1,0 +1,33 @@
+# APF public example repository: generated and private data must stay local
+.git/
+raw_dicom/
+nifti/
+derivatives/
+processing/
+logs/
+results/
+config/InS_cases.csv
+config/ExS_cases.csv
+config/*_old.csv
+*.nii
+*.nii.gz
+*.dcm
+*.ima
+*.mat
+*.log
+*.env
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+
+# APF public-release local-file protection
+/config/*.csv
+/config/*.tsv
+!/config/*.example.csv
+!/config/*.example.tsv
+/config/pipeline_config.json
+/results/
+/figures/
+.venv/
+venv/
